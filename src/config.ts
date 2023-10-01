@@ -1,5 +1,9 @@
 import type { Site, SocialObjects } from "./types";
 
+export default {
+  umami: '22c60aed-c690-4750-8897-3cf7acd27972'
+}
+
 export const SITE: Site = {
   website: "https://joverflow.cn",
   author: "Alex Shi",
