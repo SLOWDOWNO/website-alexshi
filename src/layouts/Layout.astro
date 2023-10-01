@@ -1,5 +1,4 @@
 ---
-import Umami from "@components/Umami.astro";
 import { SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
@@ -82,9 +81,9 @@ const socialImageURL = new URL(
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
+    <script async src="https://umami-alexshi.vercel.app/script.js" data-website-id="22c60aed-c690-4750-8897-3cf7acd27972"></script>
   </head>
   <body>
     <slot />
-      <Umami />
   </body>
 </html>

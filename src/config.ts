@@ -1,13 +1,9 @@
 import type { Site, SocialObjects } from "./types";
 
-export default {
-  umami: '22c60aed-c690-4750-8897-3cf7acd27972'
-}
-
 export const SITE: Site = {
   website: "https://joverflow.cn",
   author: "Alex Shi",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "Alex Shi's personal website!",
   title: "Shi Yang",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
