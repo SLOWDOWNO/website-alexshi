@@ -29,7 +29,7 @@ sudo apt update && sudo apt install git cmake gdb build-essential clang \
 clang-tidy clang-format gcc-doc pkg-config glibc-doc tcpdump tshark
 ```
 
-![](../../assets/images/cs144/lab0/pic1.png)
+<!-- ![](../../assets/images/cs144/lab0/pic1.png) -->
 
 ##### 2 Networking by hand
 
@@ -37,7 +37,7 @@ clang-tidy clang-format gcc-doc pkg-config glibc-doc tcpdump tshark
 
 这部分的任务涉及到telnet，没了解过的可以了解一下 https://zh.wikipedia.org/zh-cn/Telnet ，主要工作就是telnet远程访问cs144.keithw.org主机，请求服务器上的一个网页，这部分跟着文档一步一步来就行，需要注意的是Type那几个命令的时候手速快一点，不然会超时。到后面会用程序实现这个过程。
 
-![](../../assets/images/cs144/lab0/pic2.png)
+<!-- ![](../../assets/images/cs144/lab0/pic2.png) -->
 
 ###### 2.3 Listening and connecting
 
@@ -55,13 +55,13 @@ telnet localhost 9090
 
 使用telnet客户端建立到本机的9090端口的连接，连接成功之后就能与9090端口上的netcat服务器进行交互了。
 
-![](../../assets/images/cs144/lab0/pic3.png)
+<!-- ![](../../assets/images/cs144/lab0/pic3.png) -->
 
 ##### 3 Writing a network program using an OS stream socket
 
 这部分要求我们利用Linux内核提供的Socket API，编写一个名为**webget**的应用程序，其实就是自动化 fetch a web page 中手动的工作。不过多介绍，仔细看文档即可。
 
-![](../../assets/images/cs144/lab0/pic4.png)
+<!-- ![](../../assets/images/cs144/lab0/pic4.png) -->
 
 ###### 3.1 Let’s get started—fetching and building the starter code
 
@@ -85,7 +85,7 @@ telnet localhost 9090
 
 课程代码提供的类只是封装了C库函数，我们需要阅读`util/socket.hh`和`util/file descriptor.hh.`的公共接口部分来实现webget。提示：**Socke是一个FileDescriptor，而一个TCPSocket是一个Socket**
 
-![](../../assets/images/cs144/lab0/pic5.png)
+<!-- ![](../../assets/images/cs144/lab0/pic5.png) -->
 
 ###### 3.4 Writing webget
 
@@ -106,7 +106,7 @@ telnet localhost 9090
 运行webget程序看看和fetch web page那里输出是否相同，网络不好的话多试几次（全程科学上网）
 正确运行示例：
 
-![](../../assets/images/cs144/lab0/pic6.png)
+<!-- ![](../../assets/images/cs144/lab0/pic6.png) -->
 
 接下来可以进入测试了
 
@@ -116,7 +116,7 @@ make check0
 
 测试成功示例：
 
-![](../../assets/images/cs144/lab0/pic7.png)
+<!-- ![](../../assets/images/cs144/lab0/pic7.png) -->
 
 ##### 4 An in-memory reliable byte stream
 
@@ -124,12 +124,13 @@ make check0
 
 需要我们实现的接口：
 
-![](../../assets/images/cs144/lab0/pic8.png)
+<!-- ![](../../assets/images/cs144/lab0/pic8.png) -->
 
-![](../../assets/images/cs144/lab0/pic9.png)
+<!-- ![](../../assets/images/cs144/lab0/pic9.png) -->
 
 ../src/byte_stream_helpers.cc：
-![](../../assets/images/cs144/lab0/pic10.png)
+
+<!-- ![](../../assets/images/cs144/lab0/pic10.png) -->
 
 简单讲一下思路：从`byte_stream_helpers.cc`中看出bytestream保存的其实是string_view，最后用peek返回的view来操作pop，结合bytestream的特点，我们可以维护一个双端队列std::deque\<std:string_view>，而string_view是一个字符串视图，并不真正拥有一个字符串，所以我们还需要维护一个std::deque\std::string>。为了完成文档结尾提到的性能，其实需要使用C++的**移动语义**来优化，不过可以先实现功能，性能后面再优化。
 
@@ -147,6 +148,6 @@ make check0
 
 我的测试结果：
 
-![](../../assets/images/cs144/lab0/pic11.png)
+<!-- ![](../../assets/images/cs144/lab0/pic11.png) -->
 
 Lab0是一些热身的内容，各位仔细阅读文档不难完成。
