@@ -9,7 +9,7 @@ tags:
   - 计算机网络
   - CS144
   - C++
-description: null撒大大
+description: CS144 Lab0记录
 ---
 
 最近在学习计算机网络，注意到CS144这门课程的Lab是使用C++实现一个网络协议栈，我个人没有用Morden C++写过完整的项目，正好拿这个Lab实践，算是扎实C++的编程基础吧。
