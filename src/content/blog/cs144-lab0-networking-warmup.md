@@ -29,6 +29,8 @@ sudo apt update && sudo apt install git cmake gdb build-essential clang \
 clang-tidy clang-format gcc-doc pkg-config glibc-doc tcpdump tshark
 ```
 
+https://telegra.ph/lab0-1-10-29
+
 <!-- ![](../../assets/images/cs144/lab0/pic1.png) -->
 
 ##### 2 Networking by hand
