@@ -145,5 +145,11 @@ export const SOCIALS: SocialObjects = [
     href: "https://www.douban.com/people/240863896/",
     linkTitle: `${SITE.title} on Douban`,
     active: false,
-  }
+  },
+  {
+    name: "Strava",
+    href: "https://www.strava.com/athletes/125261795",
+    linkTitle: `${SITE.title} on Strava`,
+    active: false,
+  },
 ];
