@@ -9,7 +9,6 @@ tags:
   - leveldb
   - OS
   - 字节序
-description: leveldb util模块源码学习
 ---
 
 ### 编码与解码

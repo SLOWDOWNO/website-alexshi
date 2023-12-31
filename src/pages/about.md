@@ -1,8 +1,7 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "关于我"
 ---
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+- 业余马拉松爱好者
+  - 2023中国-东盟马拉松-半马: 02:01:59

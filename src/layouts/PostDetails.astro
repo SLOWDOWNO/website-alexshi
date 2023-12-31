@@ -13,7 +13,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, author, description, ogImage, canonicalURL, pubDatetime, tags } =
+const { title, author, ogImage, canonicalURL, pubDatetime, tags } =
   post.data;
 
 const { Content } = await post.render();
@@ -28,7 +28,7 @@ const ogUrl = new URL(
 <Layout
   title={title}
   author={author}
-  description={description}
+  
   ogImage={ogUrl}
   canonicalURL={canonicalURL}
 >
