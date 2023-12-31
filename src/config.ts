@@ -6,7 +6,7 @@ export const SITE: Site = {
   desc: "Alex Shi's personal website!",
   title: "Shi Yang",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerPage: 10,
 };
 
