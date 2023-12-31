@@ -133,3 +133,10 @@
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
 }
+@font-face {
+  font-family: 'MyFont';
+  src: url('../assets/fonts/LXGWWenKai-Regular.ttf');
+}
+body {
+  font-family: 'MyFont', sans-serif;
+}
