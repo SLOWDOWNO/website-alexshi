@@ -57,12 +57,17 @@ const { activeNav } = Astro.props;
         <ul id="menu-items" class="display-none sm:flex">
           <li>
             <a href="/posts" class={activeNav === "posts" ? "active" : ""}>
-              Posts
+              文章
             </a>
           </li>
           <li>
             <a href="/about" class={activeNav === "about" ? "active" : ""}>
-              About
+              关于我
+            </a>
+          </li>
+          <li>
+            <a href="https://www.douban.com/people/240863896" class={activeNav === "douban" ? "active" : ""}>
+              豆瓣
             </a>
           </li>
           <li>
@@ -71,11 +76,6 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-          <li>
-            <a href="https://www.douban.com/people/240863896" class={activeNav === "douban" ? "active" : ""}>
-              douban
-            </a>
-          </li>
           <li>
             <a href="/" class={activeNav === "resume" ? "active" : ""}>
               resume
