@@ -3,26 +3,17 @@ layout: ../layouts/AboutLayout.astro
 title: "个人简介"
 ---
 
-- 东北人,在华南某二本大三CS专业在读,近期在准备找一份实习
-- 对计算机领域 Why Design问题感兴趣
-- 日常喜欢看一些文学/历史/社会科学满足自己小小的好奇心
-- 业余马拉松爱好者,2023年9月31日开始跑步
-  - 2023中国-东盟马拉松-首半马: 02:01:59
+我叫Alex Shi，目前在广州读大三，CS专业。喜欢文学、电影、跑步
 
-## 联系方式 & 社交账号
+日常在 [[豆瓣]](https://www.douban.com/people/240863896/) 记录我的读书和观影，在 [[Strava]](https://www.strava.com/athletes/125261795) 记录我的马拉松日常训练
+
+**可以通过以下社交媒体找到我：**
 
 - Gmail: [isyangshi@gmail.com](mailto:isyangshi@gmail.com)
 - Github: [@SLOWDOWNO](https://github.com/SLOWDOWNO)
-- Twitter/X: [@isyangshi](https://twitter.com/isyangshi)
-- Strava: [@AlexShi](https://www.strava.com/athletes/125261795)
+- Twitter/X: [@isyangshi](https://twitter.com/dunimane)
 
-### 非常喜欢的跑步视频创作者
-
-- [@黑影TV](https://space.bilibili.com/38995440)
-- [@山雨小月](https://space.bilibili.com/3945971)
-- [@mofangxiaowu](https://space.bilibili.com/19580684)
-
-### 构建本站使用到的服务和工具
+**构建本站使用到的服务和工具:**
 
 - PaaS: [Vercel](https://vercel.com/)
 - SSG: [Astro](https://astro.build/)
