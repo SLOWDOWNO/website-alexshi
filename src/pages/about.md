@@ -17,5 +17,5 @@ title: "个人简介"
 
 - PaaS: [Vercel](https://vercel.com/)
 - SSG: [Astro](https://astro.build/)
-- Analytics: [Umami](https://umami.is/)、[Google Analytics](https://analytics.google.com/)、 [Microsoft Clarity](https://clarity.microsoft.com/)
+- Analytics: [Google Analytics](https://analytics.google.com/)、 [Microsoft Clarity](https://clarity.microsoft.com/)
 - Font：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
